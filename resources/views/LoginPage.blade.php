@@ -130,7 +130,8 @@
     <br>
     <br>
     <br>
-    <form method="GET" action="/submitLogin">
+    <form method="post" action="loginAction">
+        @csrf
     <div class="txtCenter" style="width:100%">
         <label for="uname"><b>Username</b></label>
         <input type="text" placeholder="Enter Username" name="username" required>
