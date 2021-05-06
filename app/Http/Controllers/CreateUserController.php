@@ -48,6 +48,13 @@ class CreateUserController extends Controller
 
     }
 
+    public function showEmployeeAction(Request $request){
+     
+        $query = DB::table('Employee')->get();
+        return view('ShowEmployee',['data'=>$query])->with('no', 1);
+        
+    }
+
     /**
      * Store a newly created resource in storage.
      *

@@ -50,7 +50,5 @@ Route::get('AddEmployee',function(){
     return view('AddEmployee');
 })->middleware('check');
 
-Route::get('ShowEmployee',function(){
-    return view('ShowEmployee');
-})->middleware('check');
+Route::get('ShowEmployee',[CreateUserController::class,'showEmployeeAction'])->middleware('check');
 
