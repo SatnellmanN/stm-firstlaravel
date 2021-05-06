@@ -34,6 +34,7 @@ Route::get('Logoutss', function () {
         session()->pull('ssusername');
     }
     return redirect('/');
+    //cm
 });
 
 Route::post('CreateUserFc',[CreateUserController::class,'store']);
